@@ -9,7 +9,7 @@ Data Slicing
 	
  	Run this function for each of the four numeric variables in the Iris data set.
 
-	python data_slicing.py --file_name {file_name}                 
+	python data_slicing.py --file_name iris.zip
 
 """
 
