@@ -18,7 +18,7 @@ In child directory `dvc_pipeline`:
 
 ### Metrics 
 * Changes in metrics between two experiments: `dvc exp diff`
-* Compare different experiemtns: `dvc exp show`: https://doc.dvc.org/command-reference/exp/show#exp-show.
+* Compare different experiemtns in current session: `dvc exp show` (stored locally): https://doc.dvc.org/command-reference/exp/show#exp-show.
     * Output 
     ```bash
     (udacity) dkysylychyn@MacBookPro dvc_pipeline % dvc exp show                      
@@ -32,6 +32,7 @@ In child directory `dvc_pipeline`:
     └── 7b3576f [mangy-weft]   07:36 PM   21        0.5   21
     ──────────────────────────────────────────────────────────
     ```
+* Compare different experiemtns in git commits `dvc exp show --all-commits`.
 * Show current metric: `dvc metrics show`
 * Show metrics for all git commits and current workspace: `dvc metrics show --all-commits`.
     * Your terminal will enter a paginated screen by default, which you can typically exit by typing q. 
