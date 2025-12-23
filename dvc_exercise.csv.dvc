@@ -1,5 +1,5 @@
 outs:
-- md5: a1feb066d3ce771da5c882b3ee0abb76
-  size: 115
+- md5: 1ce0eae4748197386c97ba5e909f3a41
+  size: 155
   hash: md5
   path: dvc_exercise.csv
