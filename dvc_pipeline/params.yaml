@@ -1,5 +1,5 @@
 train:
-  C: 1
+  C: 51
 
 prepare:
   data_path: fake_data.csv

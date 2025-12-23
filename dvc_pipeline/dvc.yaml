@@ -8,7 +8,6 @@ stages:
   train:
     cmd: python train.py
     deps:
-      - X.csv
       - y.csv
     outs:
       - output/model.pkl

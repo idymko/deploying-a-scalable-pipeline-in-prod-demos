@@ -3,26 +3,22 @@ stages:
   train:
     cmd: python train.py
     deps:
-    - path: X.csv
-      hash: md5
-      md5: 7d590865f797d0e66307c84bcbeb5f20
-      size: 475
     - path: y.csv
       hash: md5
       md5: 8870354405a58d988cee938d17b8b147
       size: 475
     params:
       params.yaml:
-        train.C: 1
+        train.C: 51
     outs:
     - path: output/model.pkl
       hash: md5
-      md5: d9793987c37be721dd724c2a25dd19b8
+      md5: 3598965abc57f57056364378bf7ff842
       size: 1167
     - path: output/score.json
       hash: md5
-      md5: d82ad087ed29150f86ebf0a5eca7de06
-      size: 40
+      md5: ca9bf21185f99a4391187c9f124d2cf3
+      size: 26
   prepare:
     cmd: python prepare.py
     params:
