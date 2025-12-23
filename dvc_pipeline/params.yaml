@@ -1,6 +1,6 @@
 train:
-  C: 12
+  C: 11
 
 prepare:
-  data_path: "fake_data.csv"
+  data_path: fake_data.csv
 

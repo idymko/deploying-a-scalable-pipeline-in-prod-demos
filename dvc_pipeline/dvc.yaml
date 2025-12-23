@@ -12,12 +12,12 @@ stages:
       - y.csv
     outs:
       - output/model.pkl
-      - output/score.txt  # Add score output for traceability
+      - output/score.json  # Add score output for traceability
     params:
       - train.C # Specify the parameter to track
 
 metrics:
-  - output/score.txt
-
+  - output/score.json
+  - output/model.pkl
 params:
   - params.yaml

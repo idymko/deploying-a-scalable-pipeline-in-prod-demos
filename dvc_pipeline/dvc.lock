@@ -13,16 +13,16 @@ stages:
       size: 475
     params:
       params.yaml:
-        train.C: 12
+        train.C: 11
     outs:
     - path: output/model.pkl
       hash: md5
-      md5: b86ed65d6a9dadd42dea8521123ff616
+      md5: c24e387863fc144cbd475e918c27a3d4
       size: 1167
-    - path: output/score.txt
+    - path: output/score.json
       hash: md5
-      md5: 8789081687001870f5495810818cd013
-      size: 28
+      md5: dec5611f71e3387ed28e2f950976de89
+      size: 26
   prepare:
     cmd: python prepare.py
     params:
