@@ -18,6 +18,5 @@ stages:
 
 metrics:
   - output/score.json
-  - output/model.pkl
 params:
   - params.yaml
