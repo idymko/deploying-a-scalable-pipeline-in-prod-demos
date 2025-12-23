@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: X.csv
+      hash: md5
+      md5: 7d590865f797d0e66307c84bcbeb5f20
+      size: 475
+    - path: y.csv
+      hash: md5
+      md5: 8870354405a58d988cee938d17b8b147
+      size: 475
+    params:
+      params.yaml:
+        train.C: 1.1
+    outs:
+    - path: output/model.pkl
+      hash: md5
+      md5: 2b9b375970a742b4cab51627b5a9d630
+      size: 1167
+    - path: output/score.txt
+      hash: md5
+      md5: 5bed6ae9bf59f3f43ee4516756cbe023
+      size: 17
+  prepare:
+    cmd: python prepare.py
+    params:
+      params.yaml:
+        prepare.data_path: fake_data.csv
