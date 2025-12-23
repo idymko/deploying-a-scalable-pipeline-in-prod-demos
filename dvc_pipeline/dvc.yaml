@@ -15,3 +15,9 @@ stages:
       - output/score.txt  # Add score output for traceability
     params:
       - train.C # Specify the parameter to track
+
+metrics:
+  - output/score.txt
+
+params:
+  - params.yaml
