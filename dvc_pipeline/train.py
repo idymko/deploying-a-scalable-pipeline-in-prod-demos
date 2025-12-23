@@ -36,4 +36,5 @@ print(f"F1 score: {f1:.4f}")
 
 # Save the score to a file for traceability
 with open('output/score.txt', 'w') as score_file:
+    score_file.write(f"C: {C:.4f}\n")
     score_file.write(f"F1 score: {f1:.4f}\n")
