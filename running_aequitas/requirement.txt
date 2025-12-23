@@ -15,4 +15,3 @@ tensorflow-tensorboard==0.1.8
 widgetsnbextension==3.2.0 
 html5lib==0.9999999 
 aequitas==0.42.0
-
