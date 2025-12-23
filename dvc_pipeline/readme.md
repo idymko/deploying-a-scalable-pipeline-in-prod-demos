@@ -48,7 +48,8 @@ In child directory `dvc_pipeline`:
 * `model.pkl`and `score.json` from `output` are tracked by DVC. 
 * They are stored locally in local remote "../local_remote" Google Drive Cloud connection did not work. 
 * `dvc.lock` contains files hashes that refer to local remote "../local_remote".
-
+* DVC vs. wandb: for some useces DVC can be a free alternative to wandb (weight-and-biases)
+    * DVC focuses on reproducible pipelines, data/model versioning (Git-centric), and end-to-end workflow management using DAGs, great for large files and Git integration, while WandB (Weights & Biases) offers a richer, unified platform for real-time experiment visualization, interactive dashboards, hyperparameter sweeps (Sweeps), and collaborative reporting, excellent for deep dives and rapid iteration, making DVC strong on provenance and WandB on interactive insights. 
 ## Reference DVC Pipeline example
 * Pipeline example here: https://github.com/treeverse/example-get-started
 
